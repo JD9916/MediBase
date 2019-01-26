@@ -12,6 +12,10 @@ body {background-color:yellow;}
 fieldset.violet {background-color:violet; border-color: purple;}
 fieldset.lightblue {background-color:lightblue; border-color:blue; }
 
+body{
+  background-image : url("background.jpg");
+}
+
 #loading {
     -webkit-animation: rotation 4s infinite linear;
 }
@@ -27,7 +31,7 @@ fieldset.lightblue {background-color:lightblue; border-color:blue; }
 
 .earth
 {
-  position: fixed;
+  position: absolute;
   top:320px;
   bottom:50px;
   left:150px;
