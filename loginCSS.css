@@ -12,6 +12,11 @@ body {background-color:yellow;}
 fieldset.violet {background-color:violet; border-color: purple;}
 fieldset.lightblue {background-color:lightblue; border-color:blue; }
 
+body{
+  background-image : url("background.jpg");
+  background-size : cover;
+}
+
 #loading {
     -webkit-animation: rotation 4s infinite linear;
 }
@@ -25,9 +30,30 @@ fieldset.lightblue {background-color:lightblue; border-color:blue; }
     }
 }
 
+.div{
+  position:relative;
+}
+.header{
+  font-family: arial;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.patients{
+  position: relative;
+  left:600px;
+  top: 100px;
+}
+
+.professionals{
+  position: relative;
+  left: 600px;
+  top:300px;
+}
+
 .earth
 {
-  position: fixed;
+  position: absolute;
   top:320px;
   bottom:50px;
   left:150px;
