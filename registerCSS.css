@@ -1,0 +1,44 @@
+div {border:solid black 4px;}
+a:link {color: black;}
+footer {position:absolute;bottom:0;}
+
+.purple {color:purple; font-weight: bold;}
+legend.blue {color: blue; font-weight:bold;}
+a {}
+h1 {}
+img {width: 100px; height:100px}
+label.darker { font-weight:bold;}
+fieldset.violet {background-color:violet; border-color: purple;}
+fieldset.lightblue {background-color:lightblue; border-color:blue; }
+
+.bg{
+
+  background-image : url("registerbg.jpg");
+  background-size : cover;
+  background-repeat: no-repeat;
+
+}
+
+.div{
+  position:absolute;
+}
+.header{
+  font-family: arial;
+  color: white;
+  font-size: 5vw;
+  font-weight: bold;
+  padding-left: 400px;
+}
+
+.inputs{
+  float : left;
+  position : absolute;
+  top: 0;
+  bottom:0;
+  left:0;
+  background-color: white;
+}
+
+.foot{
+  color : black;
+}
