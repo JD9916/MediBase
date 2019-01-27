@@ -32,6 +32,15 @@ fieldset.lightblue {background-color:lightblue; border-color:blue; }
     }
 }
 
+
+a:link {
+  color: white;
+}
+
+p{
+  color: white;
+}
+
 .div{
   position:absolute;
 }
@@ -44,12 +53,15 @@ fieldset.lightblue {background-color:lightblue; border-color:blue; }
 }
 
 .inputs{
+  background-image: url("starrynight.jpg");
   float : left;
+  color:white;
+  opacity: 0.8;
   position : absolute;
   top: 0;
   bottom:0;
   left:0;
-  background-color: white;
+  padding:10px;
 }
 
 .foot{
