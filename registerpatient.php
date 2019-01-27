@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+<link rel = "stylesheet" type = "text/css" href = "registerCSS.css" />
 
 <script>
 function validate()
@@ -100,53 +100,72 @@ input[type=text] {float:left;}
 </head>
 <body>
 <form action="Database.php" method="POST" onsubmit="return validate()">
-<p>Registration for Placeholder.com</p>
+<p>Registration</p>
 <br>
-First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" name="name_first" id="fname">
-<br>
-<br>
-<label>Last Name </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" name="name_last" id="lname">
-<br>
-<br>
-<label>Middle Name </label>&nbsp; <input type="textbox" name="name_middle" id="mname">
-<br>
-<br>
-<label>Email </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" name="email" id="email">
-<br>
-<br>
-<label>Phone Number &nbsp;</label> <input type="textbox" name="phone" id="phonenum">
-<br>
-<br>
-<label>City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <input type="text" name="city" id="city">
-<br><br>
-<label>Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <input type="textbox" name="address" id="address">
-<br>
-<br>
-<label>Date of birth &nbsp;&nbsp;</label> <input type="text" id="day" name="dateOfBirth" value="Enter day">
 
-<input type="text" id ="month" name = "month" value="Enter month">
-<!-- <select id="month" name = "month" >
-<option value="January" name = "month" >January</option>
-<option value="February" name = "month" >February</option>
-<option value="March" name = "month" >March</option>
-<option value="April" name = "month" >April</option>
-<option value="May" name = "month" >May</option>
-<option value="June" name = "month" >June</option>
-<option value="July" name = "month" >July</option>
-<option value="August" name = "month" >August</option>
-<option value="September" name = "month" >September</option>
-<option value="October" name = "month" >October</option>
-<option value="November" name = "month" >November</option>
-<option value="December" name = "month" >December</option>
-</select> -->
+  <body class = "bg"></body>
 
-<input type="text" id ="year" name = "year" value="Enter year"><br>
-<br>
-<label>Gender </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="genders" name="gender" value="Males"> Male <input type="radio" id="genders" name="gender" value="Female"> Female <input type="radio" id="genders" name="gender" value="Other"> Other
-<br>
-<Br>
-<input type="submit" value="Submit">
+
+
+<div class = "inputs">
+  <form action = "adsa" method = "get">
+      <h2>&nbsp;Registration</h2>
+
+      <label> First Name </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" name="name_first" id="fname">
+      <br>
+      <br>
+      <label>Last Name </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" name="name_last" id="lname">
+      <br>
+      <br>
+      <label>Middle Name </label>&nbsp; <input type="textbox" name="name_middle" id="mname">
+      <br>
+      <br>
+      <label>Email </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" name="email" id="email">
+      <br>
+      <br>
+      <label>Phone Number &nbsp;</label> <input type="textbox" name="phone" id="phonenum">
+      <br>
+      <br>
+      <label>City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <input type="text" name="city" id="city">
+      <br><br>
+      <label>Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <input type="textbox" name="address" id="address">
+      <br>
+      <br>
+      <label>Date of birth &nbsp;&nbsp;</label> <input type="text" id="day" name="dateOfBirth" value="Enter day">
+
+      <input type="text" id ="month" name = "month" value="Enter month">
+      <!-- <select id="month" name = "month" >
+      <option value="January" name = "month" >January</option>
+      <option value="February" name = "month" >February</option>
+      <option value="March" name = "month" >March</option>
+      <option value="April" name = "month" >April</option>
+      <option value="May" name = "month" >May</option>
+      <option value="June" name = "month" >June</option>
+      <option value="July" name = "month" >July</option>
+      <option value="August" name = "month" >August</option>
+      <option value="September" name = "month" >September</option>
+      <option value="October" name = "month" >October</option>
+      <option value="November" name = "month" >November</option>
+      <option value="December" name = "month" >December</option>
+      </select> -->
+
+      <input type="text" id ="year" name = "year" value="Enter year"><br>
+      <br>
+      <label>Gender </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="genders" name="gender" value="Males"> Male <input type="radio" id="genders" name="gender" value="Female"> Female <input type="radio" id="genders" name="gender" value="Other"> Other
+      <br>
+      <Br>
+      <input type="submit" value="Submit">
+
+      
+      <br/>
+      <br/>
+  </form>
+</div>
 </body>
+
+
+
+
 <footer>
 </footer>
 </html>
