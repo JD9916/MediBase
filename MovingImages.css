@@ -1,0 +1,13 @@
+.rightSide
+{
+  padding-left: 100px;
+}
+
+.leftSide
+{
+	font-family: arial;
+  color: tomato;
+  font-size: 5vw;
+  font-weight: bold;
+  padding-left: 400px;
+}
