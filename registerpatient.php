@@ -131,32 +131,18 @@ input[type=text] {float:left;}
       <label>Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <input type="textbox" name="address" id="address">
       <br>
       <br>
-      <label>Date of birth &nbsp;&nbsp;</label> <input type="text" id="day" name="dateOfBirth" value="Enter day">
+      <label>Date of birth &nbsp;&nbsp;</label> <input type="text" id="day" name="dateOfBirth" placeholder="Enter day">
 
-      <input type="text" id ="month" name = "month" value="Enter month">
-      <!-- <select id="month" name = "month" >
-      <option value="January" name = "month" >January</option>
-      <option value="February" name = "month" >February</option>
-      <option value="March" name = "month" >March</option>
-      <option value="April" name = "month" >April</option>
-      <option value="May" name = "month" >May</option>
-      <option value="June" name = "month" >June</option>
-      <option value="July" name = "month" >July</option>
-      <option value="August" name = "month" >August</option>
-      <option value="September" name = "month" >September</option>
-      <option value="October" name = "month" >October</option>
-      <option value="November" name = "month" >November</option>
-      <option value="December" name = "month" >December</option>
-      </select> -->
+      <input type="text" id ="month" name = "month" placeholder="Enter month">
 
-      <input type="text" id ="year" name = "year" value="Enter year"><br>
+      <input type="text" id ="year" name = "year" placeholder="Enter year"><br>
       <br>
       <label>Gender </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="genders" name="gender" value="Males"> Male <input type="radio" id="genders" name="gender" value="Female"> Female <input type="radio" id="genders" name="gender" value="Other"> Other
       <br>
       <Br>
       <input type="submit" value="Submit">
 
-      
+
       <br/>
       <br/>
   </form>
