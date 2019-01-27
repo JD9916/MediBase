@@ -40,22 +40,27 @@ fieldset.lightblue {background-color:lightblue; border-color:blue; }
   color: white;
   font-size: 5vw;
   font-weight: bold;
+  padding-left: 400px;
 }
 
 .inputs{
   float : left;
+  position : absolute;
+  top: 0;
+  bottom:0;
+  left:0;
   background-color: white;
 }
 
 .foot{
-  color : white;
+  color : black;
 }
 .earth
 {
   position:absolute;
   top:150px;
   bottom:0;
-  left:350px;
+  left:550px;
   right:0;
   max-width: 400px;
   max-height: 400px;
