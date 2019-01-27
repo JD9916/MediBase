@@ -50,8 +50,8 @@ fieldset.lightblue {background-color:lightblue; border-color:blue; }
 .earth
 {
   position:absolute;
-  top:150px;
-  bottom:0;
+  top:100%;
+  bottom:100%;
   left:350px;
   right:0;
   max-width: 400px;
