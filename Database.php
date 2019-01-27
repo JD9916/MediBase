@@ -1,6 +1,6 @@
 <html>
   <head>
-    <meta http-equiv="Refresh" content="0; url=http://localhost/Patient.html" />
+    <meta http-equiv="Refresh" content="0; url=http://localhost/login.html" />
   </head>
 </html>
 
