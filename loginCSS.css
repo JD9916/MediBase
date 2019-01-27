@@ -50,6 +50,7 @@ p{
   font-size: 5vw;
   font-weight: bold;
   padding-left: 400px;
+  text-shadow: 7px 7px 7px rgb(0,0,0);
 }
 
 .inputs{
@@ -62,6 +63,8 @@ p{
   bottom:0;
   left:0;
   padding:10px;
+  text-shadow: 7px 7px 7px rgb(0,0,0);
+  font-family: georgia;
 }
 
 .foot{
