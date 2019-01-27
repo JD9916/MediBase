@@ -22,14 +22,14 @@ input[type=text] {float:left;}
 <body class = "bg"></body>
 
 <div class = "inputs">
-  <form action = "adsa" method = "get">
+  <form action = "AppointmentDatabase.php" method = "get">
       <h2>&nbsp;Book an Appointment</h2>
-      <label>&nbsp;&nbsp;Doctor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" align="right"><br><br>
-      <label>&nbsp;&nbsp;Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" align="right"><br><br>
-      <label>&nbsp;&nbsp;Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" align="right"><br><br>
+      <label>&nbsp;&nbsp;Doctor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" align="right" name = "doctor"><br><br>
+      <label>&nbsp;&nbsp;Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" align="right" name = "time"><br><br>
+      <label>&nbsp;&nbsp;Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" align="right" name = "date"><br><br>
 
       <br/>
-      <pre>                               <input type = "submit"></input></pre>
+      <pre><input type = "submit"></input></pre>
       <br/>
       <br/>
   </form>
