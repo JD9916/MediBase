@@ -8,13 +8,15 @@ a {}
 h1 {}
 img {width: 100px; height:100px}
 label.darker { font-weight:bold;}
-body {background-color:yellow;}
 fieldset.violet {background-color:violet; border-color: purple;}
 fieldset.lightblue {background-color:lightblue; border-color:blue; }
 
-body{
+.bg{
+
   background-image : url("background.jpg");
   background-size : cover;
+  background-repeat: no-repeat;
+
 }
 
 #loading {
@@ -31,38 +33,41 @@ body{
 }
 
 .div{
-  position:relative;
+  position:absolute;
 }
 .header{
   font-family: arial;
-  font-size: 60px;
+  color: white;
+  font-size: 5vw;
   font-weight: bold;
+  padding-left: 400px;
 }
 
-.patients{
-  position: relative;
-  left:600px;
-  top: 100px;
+.inputs{
+  float : left;
+  position : absolute;
+  top: 0;
+  bottom:0;
+  left:0;
+  background-color: white;
 }
 
-.professionals{
-  position: relative;
-  left: 600px;
-  top:300px;
+.foot{
+  color : black;
 }
-
 .earth
 {
-  position: absolute;
-  top:320px;
-  bottom:50px;
-  left:150px;
+  position:absolute;
+  top:150px;
+  bottom:0;
+  left:550px;
   right:0;
-  max-width: 300px;
-  max-height: 300px;
-  width= 300px;
-  height= 300px;
+  max-width: 400px;
+  max-height: 400px;
+  resize:both;
+  overflow:auto;
   background-image: url(https://wallpapercave.com/wp/Dq6o3uI.jpg);
+  object-fit: scale-down;
   border-radius:50%;
   box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
   animation: spin 30s linear alternate infinite ;
