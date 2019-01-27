@@ -47,11 +47,14 @@ fieldset.lightblue {background-color:lightblue; border-color:blue; }
   background-color: white;
 }
 
+.foot{
+  color : white;
+}
 .earth
 {
   position:absolute;
-  top:100%;
-  bottom:100%;
+  top:150px;
+  bottom:0;
   left:350px;
   right:0;
   max-width: 400px;
@@ -59,7 +62,7 @@ fieldset.lightblue {background-color:lightblue; border-color:blue; }
   resize:both;
   overflow:auto;
   background-image: url(https://wallpapercave.com/wp/Dq6o3uI.jpg);
-  /*object-fit: scale-down;*/
+  object-fit: scale-down;
   border-radius:50%;
   box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
   animation: spin 30s linear alternate infinite ;
