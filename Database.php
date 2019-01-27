@@ -1,3 +1,9 @@
+<html>
+  <head>
+    <meta http-equiv="Refresh" content="0; url=http://localhost/Patient.html" />
+  </head>
+</html>
+
 <?php
      $Database= mysqli_connect("localhost", "root", "root", "websiteusers");
      $first= $_POST['name_first'];
