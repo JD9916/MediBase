@@ -10,88 +10,107 @@
 <script>
 function validate()
 {
-var fname=document.getElementById('fname').value;
-var regFname=/^[a-z ,.'-]+$/i;
-	if (regFname.test(fname) && fname!="")
+	var username=$("#username").val();
+	if (username.length>6)
 	{
-		var lname=$('#lname').val();
-		var regLname=/^[a-z ,.'-]+$/i;
-		if(regLname.test(lname)&& lname!="")
-		{
-			var email=$('#email').val();
-			var regEmail=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-			if (regEmail.test(email)&& email!="")
+			var password=$("#pass").val();
+			if (password.length>6)
 			{
-				var phone=$('#phonenum').val();
-				var regPhone=/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
-				if (regPhone.test(phone)&& phone!="")
+				var fname=document.getElementById('fname').value;
+				var regFname=/^[a-z ,.'-]+$/i;
+				if (regFname.test(fname) && fname!="")
 				{
-					var city=$('#city').val();
-					var regCity=/^[a-z ,.'-]+$/i;
-					if(regCity.test(city) && city!="")
+					var lname=$('#lname').val();
+					var regLname=/^[a-z ,.'-]+$/i;
+					if(regLname.test(lname)&& lname!="")
 					{
-						var day=$("#day").val();
-						var regDay=/^[0-9]*$/;
-						if (regDay.test(day)&&day!="")
+						var email=$('#email').val();
+						var regEmail=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+						if (regEmail.test(email)&& email!="")
 						{
-							var year=$("#year").val();
-							var regYear=/^[0-9]*$/;
-							if (regYear.test(year) && year!="")
+							var phone=$('#phonenum').val();
+							var regPhone=/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+							if (regPhone.test(phone)&& phone!="")
 							{
-							var month=$("#month").val();
-							var gender=$("input[name='gender']:checked").val();
-							if (gender!=null)
-							{
-							alert("Processing to the next page");
+									var city=$('#city').val();
+									var regCity=/^[a-z ,.'-]+$/i;
+									if(regCity.test(city) && city!="")
+									{
+										var day=$("#day").val();
+										var regDay=/^[0-9]*$/;
+										if (regDay.test(day)&&day!="")
+										{
+											var year=$("#year").val();
+											var regYear=/^[0-9]*$/;
+											if (regYear.test(year) && year!="")
+											{
+												var month=$("#month").val();
+												var gender=$("input[name='gender']:checked").val();
+												if (gender!=null)
+												{
+													alert("Processing to the next page");
+												}
+												else
+												{
+													alert("Error with gender!");
+													return false;
+												}
+											}
+											else
+											{
+												alert("Error with year!");
+												return false;
+											}
+										}
+										else
+										{
+											alert("Error with day!");
+											return false;
+										}
+									}
+									else
+									{
+										alert("Error with city!");
+										return false;
+									}
+								}
+								else
+								{
+									alert("Error with phone number!");
+									return false;
+								}
 							}
 							else
 							{
-								alert("Error with gender!");
-								return false;
-							}
-							}
-							else
-							{
-								alert("Error with year!");
+								alert("Error with email!");
 								return false;
 							}
 						}
 						else
 						{
-							alert("Error with day!");
+							alert("Error with last name!");
 							return false;
 						}
 					}
 					else
 					{
-						alert("Error with city!");
+						alert("Error with first name!");
 						return false;
 					}
 				}
 				else
 				{
-					alert("Error with phone number!");
+					alert("Password too short!");
 					return false;
 				}
 			}
 			else
 			{
-				alert("Error with email!");
+				alert ("Username too short!");
 				return false;
 			}
 		}
-		else
-		{
-		alert("Error with last name!");
-		return false;
-		}
-	}
-	else
-	{
-		alert("Error with first name!");
-		return false;
-	}
-}
+
 </script>
 <style>
 label {float:left;}
@@ -110,7 +129,12 @@ input[type=text] {float:left;}
 <div class = "inputs">
   <form action = "adsa" method = "get">
       <h2>&nbsp;Registration</h2>
-
+      Medicare ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" id="username">
+      <br>
+      <br>
+      Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" id="password">
+      <br>
+      <br>
       <label> First Name </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" name="name_first" id="fname">
       <br>
       <br>
