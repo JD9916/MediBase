@@ -36,6 +36,19 @@ fieldset.lightblue {background-color:lightblue; border-color:blue; }
 a:link {
   color: white;
 }
+a:hover{
+  color: white;
+}
+a:active{
+  color: white;
+}
+a:visited{
+  color: white;
+}
+
+footer{
+  color: white;
+}
 
 p{
   color: white;
