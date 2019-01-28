@@ -1,5 +1,5 @@
 # About MediBase
-Medibase is an online appointment reservation system designed for use by doctors and patients. The aim of this project is to provide an eco-friendly platform for simplifying the process of booking any medical appointments.
+Medibase is an online appointment reservation system designed for use by doctors and patients. The aim of this project is to provide an eco-friendly platform for simplifying the process of booking medical appointments. MediBase provides a one-stop experience supplying users with all of their medical booking needs including dental, eyecare, general checkup, and more.
 
 
 # ConUHacks2019 Connect information
