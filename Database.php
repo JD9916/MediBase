@@ -1,11 +1,11 @@
 <html>
   <head>
-    <meta http-equiv="Refresh" content="0; url=http://localhost/login.php" />
+    <meta http-equiv="Refresh" content="0; url=http://localhost/conu/login.html" />
   </head>
 </html>
 
 <?php
-     $Database= mysqli_connect("localhost", "root", "root", "websiteusers");
+     $Database= mysqli_connect("localhost", "root", "", "userdatabase");
      $username = $_POST['username'];
      $password = $_POST['password'];
      $first= $_POST['name_first'];
@@ -24,11 +24,7 @@
      echo $first . " " . $middle . " " . $last . " " . $email . " " . $phone . " " . $city . " " . $address . " ". $dateOfBirth . " ";
      echo $monthOfBirth . " " . $yearOfBirth . " " . $gender;
      echo "username: " . $username . " password: " . $password;
-     $query="INSERT INTO websiteusers(firstname, middlename, lastname, email, phone, city, address, dateOfBirth, monthOfBirth, yearOfBirth, gender, username, password) VALUES ('$first', '$middle', '$last', '$email','$phone', '$city', '$address', '$dateOfBirth', '$monthOfBirth', '$yearOfBirth', '$gender')";
-     $sth = $Database->prepare($query);
-     $sth->execute();
-
-     $query="INSERT INTO websiteusers(username, password) VALUES ('$username', '$password')";
+     $query="INSERT INTO websiteusers(firstname, middlename, lastname, email, phone, city, address, dateOfBirth, monthOfBirth, yearOfBirth, gender, username, password) VALUES ('$first', '$middle', '$last', '$email','$phone', '$city', '$address', '$dateOfBirth', '$monthOfBirth', '$yearOfBirth', '$gender', '$username','$password')";
      $sth = $Database->prepare($query);
      $sth->execute();
 ?>

@@ -1,7 +1,7 @@
 <?php
   session_start();
 ?>
-
+<html>
 <html lang="en">
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -106,7 +106,7 @@ function validate()
 			}
 			else
 			{
-				alert ("Username too short!");
+				alert ("Medicare ID too short!");
 				return false;
 			}
 		}
@@ -127,12 +127,11 @@ input[type=text] {float:left;}
 
 
 <div class = "inputs">
-  <form action = "adsa" method = "get">
       <h2>&nbsp;Registration</h2>
-      Medicare ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" id="username">
+      Medicare ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" id="username" name="username">
       <br>
       <br>
-      Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" id="password">
+      Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" name="password"id="password">
       <br>
       <br>
       <label> First Name </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" name="name_first" id="fname">
@@ -169,8 +168,9 @@ input[type=text] {float:left;}
 
       <br/>
       <br/>
-  </form>
 </div>
+</form>
+
 </body>
 
 
