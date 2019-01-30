@@ -1,11 +1,8 @@
 div {border:solid black 4px;}
-a:link {color: black;}
 footer {position:absolute;bottom:0;}
 
 .purple {color:purple; font-weight: bold;}
 legend.blue {color: blue; font-weight:bold;}
-a {}
-h1 {}
 img {width: 100px; height:100px}
 label.darker { font-weight:bold;}
 fieldset.violet {background-color:violet; border-color: purple;}
@@ -34,6 +31,19 @@ fieldset.lightblue {background-color:lightblue; border-color:blue; }
 
 
 a:link {
+  color: white;
+}
+a:hover{
+  color: white;
+}
+a:active{
+  color: white;
+}
+a:visited{
+  color: white;
+}
+
+footer{
   color: white;
 }
 
@@ -76,17 +86,15 @@ p{
   top:26%;
   bottom:0%;
   left:45%;
-  right:0;
   max-width: 400px;
   max-height: 400px;
-  min-width: 100px;
-  min-height: 100px;
+  min-width: 400px;
+  min-height: 400px;
   width:400px;
   height:400px;
   resize:both;
   overflow:auto;
   background-image: url(https://wallpapercave.com/wp/Dq6o3uI.jpg);
-  object-fit: scale-down;
   border-radius:50%;
   box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
   animation: spin 30s linear alternate infinite ;
